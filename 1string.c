@@ -62,6 +62,7 @@ char *_strcat(char *dest, char *src)
  * @n: the amount of bytes to be maximally used.
  * Return: the concatenated string.
  */
+char *_strncat(char *dest, char *src, int n)
 {
 	int a, b;
 	char *s = dest;
