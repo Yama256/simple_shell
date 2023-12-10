@@ -56,23 +56,27 @@ char *_strcat(char *dest, char *src)
 	return (ret);
 }
 /**
- * _strcopy - copies a string
- * @dest: the destination
- * @srs: the source
- *
- * Return: pointer to destination
+ **_strncat _ concatenates two strings
+ * @dest: the first string.
+ * @src: the second string.
+ * @n: the amount of bytes to be maximally used.
+ * Return: the concatenated string.
  */
-char *_strcpy(char *dest, char *src)
 {
-	int i = 0;
+	int a, b;
+	char *s = dest;
 
-	if (dest == src || src == 0)
-		return (dest);
-	while (src[i])
+	a = 0;
+	b = 0;
+	while (dest[a] != '\0')
+		a++;
+	while (src[b] != '\0' && b < n)
 	{
-		dest[i] = src[i];
-		i++;
+		dest[a] = src[b];
+		a++;
+		b++;
 	}
-	dest[i] = 0;
-	return (drst);
+	if (b < n)
+		dest[a] = '\0';
+	return (s)
 }
