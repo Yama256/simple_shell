@@ -141,4 +141,12 @@ void print_error(info_t *, char *);
 int print_d(int, int);
 char *convert_number(long int, int, int);
 void remove_comments(char *);
-#en
+
+/* toem_memory_realloc.c */
+char *_memset(char *f, char a, unsigned int x);
+void ffree(char **pp);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+
+
+
+#end
