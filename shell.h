@@ -112,22 +112,22 @@ typedef struct builtin
 
 
 /* toem_1string.c */
-int _strlen(char *s)
-int _strcmp(char *x, char *y)
-char *_strcat(char *dest, char *src)
-char *_strncat(char *dest, char *src, int n)
+int _strlen(char *s);
+int _strcmp(char *x, char *y);
+char *_strcat(char *dest, char *src);
+char *_strncat(char *dest, char *src, int n);
 
 /* toem_2string.c */
-char *starts_with(const char *haystack, const char *needle)
-int _putchar(char c)
-char *_strcpy(char *dest, char *src)
-char *_strcpy(char *dest, char *src, int n)
+char *starts_with(const char *haystack, const char *needle);
+int _putchar(char c);
+char *_strcpy(char *dest, char *src);
+char *_strcpy(char *dest, char *src, int n);
 
 /* toem_memory_function.c */
-char *_memset(char *f, char b, unsigned int n)
-void ffree(char **ll)
-void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
-int bfree(void **ptr)
+char *_memset(char *f, char b, unsigned int n);
+void ffree(char **ll);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+int bfree(void **ptr);
 
 	/* toem_memory_errors0.c */
 void _eputs(char *);
@@ -135,4 +135,10 @@ int _eputchar(char);
 int _putfd(char c, int fd);
 int _putsfd(char *str, int fd);
 
-#e
+/* toem_errors1.c */
+int _erratoi(char *);
+void print_error(info_t *, char *);
+int print_d(int, int);
+char *convert_number(long int, int, int);
+void remove_comments(char *);
+#en
