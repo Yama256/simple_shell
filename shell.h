@@ -129,4 +129,10 @@ void ffree(char **ll)
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 int bfree(void **ptr)
 
+	/* toem_memory_errors0.c */
+void _eputs(char *);
+int _eputchar(char);
+int _putfd(char c, int fd);
+int _putsfd(char *str, int fd);
+
 #
